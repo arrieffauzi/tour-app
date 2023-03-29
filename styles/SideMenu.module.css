@@ -1,0 +1,47 @@
+.fullHeight {
+  height: 100%;
+}
+
+.sideContainer {
+  flex-direction: row;
+  display: flex;
+}
+
+.menu {
+  flex: 0.45;
+  background-color: rgb(49, 52, 64);
+  color: rgb(130, 152, 160);
+}
+
+.menuItem {
+  border-bottom: solid 1px;
+  height: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuContent {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.filter {
+  flex: 1;
+}
+
+.filterMenu {
+  width: 100%;
+  height: 100%;
+}
+
+.filterComponent {
+  background-color: rgb(40, 44, 55);
+  color: white;
+  font-weight: 500;
+  padding: 41px 27px;
+}
