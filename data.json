@@ -5,63 +5,72 @@
       "placeName": "Merlion",
       "lat": 1.28692,
       "lng": 103.85457,
-      "shortDesc": "The Merlion is the national personification of Singapore"
+      "shortDesc": "The Merlion is the national personification of Singapore",
+      "longDesc": "its name combines 'mer' meaning the sea, and 'lion'. The fish body represent Singapores origin as a fishing village when it was called Temasek, which mean 'Sea Town' in Javanese. The lion head represent Singapore's original name-Singapura-meaning 'lion city'or 'kota singa'"
     },
     {
       "id": 2,
       "placeName": "Asian Civilisations Museum",
       "lat": 1.287466,
       "lng": 103.851424,
-      "shortDesc": "The Merlion is the national personification of Singapore"
+      "shortDesc": "The Asian Civilisations Museum is devoted to exploring the rich artistic heritage of Asia, especially the ancestral cultures of Singaporeans",
+      "longDesc": "The Asian Civilisations Museum is devoted to exploring the rich artistic heritage of Asia, especially the ancestral cultures of Singaporeans. Founded in 1993 and in its present building by the Singapore River since 2003, the museum traces its roots to the Raffles Museum, founded in the middle of the 19th century."
     },
     {
       "id": 3,
       "placeName": "Clarke Quay",
       "lat": 1.290555,
       "lng": 103.846188,
-      "shortDesc": "The Merlion is the national personification of Singapore"
+      "shortDesc": "TClarke Quay was named after Sir Andrew Clarke, Singapore's second Governor and Governor of the Straits Settlements.",
+      "longDesc": "Clarke Quay is located along the Singapore River. It forms part of the Singapore River precinct together with Boat Quay and Robertson Quay. From the early 1800s, Clarke Quay served as a dock for the loading and unloading of cargoes for the godowns (warehouses) and commercial houses situated along the Singapore River."
     },
     {
       "id": 4,
       "placeName": "Fort Canning Park",
       "lat": 1.295526,
       "lng": 103.845331,
-      "shortDesc": "The Merlion is the national personification of Singapore"
+      "shortDesc": "TThe unique blend of historical relics, lush greenery and expansive lawns has made Fort Canning a hub of cultural and artistic activity",
+      "longDesc":"Fort Canning Park, an iconic hilltop landmark has witnessed many of Singapore's historical milestones. The hill once sited the palaces of 14th century Kings and served as the Headquarters of the Far East Command Centre and British Army Barracks."
     },
     {
       "id": 5,
       "placeName": "Orchard Road",
       "lat": 1.302279,
       "lng": 103.837399,
-      "shortDesc": "The Merlion is the national personification of Singapore"
+      "shortDesc": "Orchard Road has the Istana at the southern end of the road, which is the official house for the President of Singapore.",
+      "longDesc":"Orchard Road is an enormous tree-lined avenue, where you can find a range of shopping centres, exclusive hotels, and the best shops in Singapore. Orchard Road. Café in Istana Park."
     },
     {
       "id": 6,
       "placeName": "Singapore Flyer",
       "lat": 1.289332,
       "lng": 103.863152,
-      "shortDesc": "The Merlion is the national personification of Singapore"
+      "shortDesc": "In May 2007, the Singapore Flyer unveiled its mock capsule amidst much fanfare and anticipation",
+      "longDesc":"The Singapore Flyer is an observation wheel at the Downtown Core district of Singapore. Officially opened on 15 April 2008, it has 28 air-conditioned capsules, each able to accommodate 28 passengers, and incorporates a three-story terminal building."
     },
     {
       "id": 7,
       "placeName": "Marina Bay Sands Skypark",
       "lat": 1.283099,
       "lng": 103.860295,
-      "shortDesc": "The Merlion is the national personification of Singapore"
+      "shortDesc":"A highlight of the luxurious Marina Bay Sands resort, the Marina Bay Sands SkyPark is a gigantic rooftop complex balanced atop the resorts three towers",
+      "longDesc": "The Marina Bay Sands® SkyPark is a roof like no other, perched 200 metres in the air featuring an infinity pool and observation deck. Marina Bay Sands SkyPark infinity pool overlooking the Singapore skyline in the day."
     },
     {
       "id": 8,
       "placeName": "Gardens By The Bay",
       "lat": 1.28179,
       "lng": 103.863954,
-      "shortDesc": "The Merlion is the national personification of Singapore"
+      "shortDesc": "TThe Gardens by the Bay is a nature park spanning 101 hectares (250 acres) in the Central Region of Singapore, adjacent to the Marina Reservoir",
+      "longDesc":"A national garden and premier horticultural attraction for local and international visitors, Gardens by the Bay is a showpiece of horticulture and garden artistry that presents the plant kingdom in a whole new way, entertaining while educating visitors with plants seldom seen in this part of the world, ranging from species in cool, temperate climates to tropical forests and habitats."
     },
     {
       "id": 9,
       "placeName": "Chinatown",
       "lat": 1.284193,
       "lng": 103.843362,
-      "shortDesc": "The Merlion is the national personification of Singapore"
+      "shortDesc":"A Chinatown is an ethnic enclave of Chinese people located outside Greater China, most often in an urban setting",
+      "longDesc": "A Chinatown (Chinese: 唐人街) is an ethnic enclave of Chinese people located outside Greater China, most often in an urban setting. Areas known as Chinatown exist throughout the world, including Europe, Asia, Africa, Oceania, and the Americas."
     }
   ]
 }

@@ -23,6 +23,7 @@ export default function Index() {
     try {
       const response = await fetch("./api/location");
       const data = await response.json();
+      console.log(data);
       setParam({ data: data.data, menu: "" });
     } catch (error) {
       console.error(error);

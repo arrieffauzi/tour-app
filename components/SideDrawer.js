@@ -1,16 +1,27 @@
 import { TourContext } from "@/pages";
 import { Drawer, theme } from "antd";
-import Image from "next/image";
 import React, { useContext, useEffect, useState } from "react";
 import style from "../styles/Drawer.module.css";
+import { IoLocationSharp } from "react-icons/io5";
+import { BiWorld } from "react-icons/bi";
 
 export default function SideDrawer(open) {
   const [isOpen, setIsOpen] = useState(false);
   const { param, setParam } = useContext(TourContext);
+  const [selected, setSelected] = useState([]);
   const { token } = theme.useToken();
 
   useEffect(() => {
     setIsOpen(open);
+    let currentMenu = [];
+    if (param !== {}) {
+      currentMenu = param.data.filter((item) => item.placeName == param.menu);
+      if (currentMenu.length > 0) {
+        setSelected(currentMenu[0]);
+        console.log("current", currentMenu[0]);
+      }
+    }
+    console.log('drawer param',param);
   }, [open]);
 
   const onClose = () => {
@@ -26,7 +37,7 @@ export default function SideDrawer(open) {
   };
 
   return (
-    <div >
+    <div>
       <Drawer
         // title="Basic Drawer"
         headerStyle={{ display: "none" }}
@@ -46,14 +57,19 @@ export default function SideDrawer(open) {
             <span className={style.name}>{param.menu && param.menu}</span>
           </div>
           <div className={style.desc}>
-            <p>The Merlion is the national personification of Singapore</p>
-            <p style={{marginTop:20}}>
-              its name combines "mer" meaning the sea, and "lion". The fish body
-              represent Singapore's origin as a fishing village when it was
-              called Temasek, which mean "Sea Town" in Javanese. The lion head
-              represent Singapore's original name-Singapura-meaning "lion city"
-              or "kota singa"
+            <p>{selected.shortDesc}</p>
+            <p style={{ marginTop: 20 }}>
+              {selected.longDesc}
             </p>
+            <div className={style.address}>
+              <span>
+                <IoLocationSharp color="#72cdd2" /> 10 Bayfront Avenue,
+                Singapore
+              </span>
+              <span style={{marginTop:10}}>
+                <BiWorld color="#92d72e" /> http://www.marinabaysands.com/
+              </span>
+            </div>
           </div>
         </div>
       </Drawer>
@@ -68,4 +84,3 @@ export default function SideDrawer(open) {
 //     <div>SideDrawer</div>
 //   )
 // }
-

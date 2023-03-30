@@ -119,8 +119,6 @@ export default function SideMenu() {
           mode="inline"
           items={items}
           rootClassName={style.filterComponent}
-          color={'#92d72e'}
-          colorBgTextHover={'#1c1f27'}
         />
       </div>
     </div>
