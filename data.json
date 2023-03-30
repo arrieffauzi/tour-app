@@ -1,0 +1,67 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "placeName": "Merlion",
+      "lat": 1.28692,
+      "lng": 103.85457,
+      "shortDesc": "The Merlion is the national personification of Singapore"
+    },
+    {
+      "id": 2,
+      "placeName": "Asian Civilisations Museum",
+      "lat": 1.287466,
+      "lng": 103.851424,
+      "shortDesc": "The Merlion is the national personification of Singapore"
+    },
+    {
+      "id": 3,
+      "placeName": "Clarke Quay",
+      "lat": 1.290555,
+      "lng": 103.846188,
+      "shortDesc": "The Merlion is the national personification of Singapore"
+    },
+    {
+      "id": 4,
+      "placeName": "Fort Canning Park",
+      "lat": 1.295526,
+      "lng": 103.845331,
+      "shortDesc": "The Merlion is the national personification of Singapore"
+    },
+    {
+      "id": 5,
+      "placeName": "Orchard Road",
+      "lat": 1.302279,
+      "lng": 103.837399,
+      "shortDesc": "The Merlion is the national personification of Singapore"
+    },
+    {
+      "id": 6,
+      "placeName": "Singapore Flyer",
+      "lat": 1.289332,
+      "lng": 103.863152,
+      "shortDesc": "The Merlion is the national personification of Singapore"
+    },
+    {
+      "id": 7,
+      "placeName": "Marina Bay Sands Skypark",
+      "lat": 1.283099,
+      "lng": 103.860295,
+      "shortDesc": "The Merlion is the national personification of Singapore"
+    },
+    {
+      "id": 8,
+      "placeName": "Gardens By The Bay",
+      "lat": 1.28179,
+      "lng": 103.863954,
+      "shortDesc": "The Merlion is the national personification of Singapore"
+    },
+    {
+      "id": 9,
+      "placeName": "Chinatown",
+      "lat": 1.284193,
+      "lng": 103.843362,
+      "shortDesc": "The Merlion is the national personification of Singapore"
+    }
+  ]
+}

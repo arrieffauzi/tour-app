@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.image {
+  background-color: blue;
+  flex: 0.3;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+}
+
+.nameContainer {
+  background-color: #72cdd2;
+  flex: 0.085;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.name {
+  font-size: 24px;
+  color: white;
+  margin-left: 36px;
+  font-weight: 400;
+}
+
+.desc {
+  background-color: #313541;
+  flex: 1;
+  padding: 30px 36px;
+  text-align: justify;
+  color: #adaeb0;
+}

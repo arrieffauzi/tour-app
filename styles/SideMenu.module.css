@@ -13,6 +13,14 @@
   color: rgb(130, 152, 160);
 }
 
+.icon {
+  font-size: 35px;
+}
+
+.menuName {
+  font-size: 16px;
+}
+
 .menuItem {
   border-bottom: solid 1px;
   height: 125px;
@@ -44,4 +52,16 @@
   color: white;
   font-weight: 500;
   padding: 41px 27px;
+}
+
+:where(.css-dev-only-do-not-override-1e3x2xa).ant-menu-light
+  .ant-menu-item-selected,
+:where(.css-dev-only-do-not-override-1e3x2xa).ant-menu-light
+  > .ant-menu
+  .ant-menu-item-selected {
+  background-color: #1c1f27;
+}
+
+.active {
+  background-color: #72cdd2;
 }

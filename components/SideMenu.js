@@ -1,12 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 import style from "../styles/SideMenu.module.css";
-import {
-  MailOutlined,
-  SettingOutlined,
-  InfoCircleOutlined,
-  AppstoreOutlined,
-} from "@ant-design/icons";
+import { InfoCircleOutlined, InfoCircleFilled } from "@ant-design/icons";
 import { Menu } from "antd";
+import { TourContext } from "@/pages";
 
 function getItem(label, key, icon, children, type) {
   return {
@@ -20,11 +16,11 @@ function getItem(label, key, icon, children, type) {
 
 // Menu Item
 const menu = [
-  { name: "Browse", icon: <InfoCircleOutlined /> },
-  { name: "Suggest Attraction", icon: <InfoCircleOutlined /> },
-  { name: "Videos", icon: <InfoCircleOutlined /> },
-  { name: "Blog", icon: <InfoCircleOutlined /> },
-  { name: "About", icon: <InfoCircleOutlined /> },
+  { name: "Browse", icon: "/icon-browse.png" },
+  { name: "Suggest Attraction", icon: "/icon-lion.png" },
+  { name: "Videos", icon: "/icon-video.png" },
+  { name: "Blog", icon: "/icon-blog.png" },
+  { name: "About", icon: "/icon-info.png" },
 ];
 
 // Filter Menu Item
@@ -39,7 +35,7 @@ const items = [
       "mb1",
       null,
       [
-        getItem("ArtScience Museum", "ArtScience Museum"),
+        getItem("Art Science Museum", "Art Science Museum"),
         getItem("Marina Bay Sands Skypark", "Marina Bay Sands Skypark"),
         getItem("Double Helix Bridge", "Double Helix Bridge"),
       ],
@@ -49,7 +45,13 @@ const items = [
   {
     type: "divider",
   },
-  getItem("Garden by the Bay", "gbb", "", []),
+  getItem("Garden by the Bay", "gbb", "", [
+    getItem("Gardens By The Bay", "Gardens By The Bay"),
+  ]),
+  {
+    type: "divider",
+  },
+  getItem("Chinatown", "ch", "", [getItem("Chinatown", "Chinatown")]),
   {
     type: "divider",
   },
@@ -58,7 +60,7 @@ const items = [
     "",
     null,
     [
-      getItem("Asian Civilisations Musemum", "Asian Civilisations Musemum"),
+      getItem("Asian Civilisations Museum", "Asian Civilisations Museum"),
       {
         type: "divider",
       },
@@ -81,9 +83,13 @@ const items = [
 ];
 
 export default function SideMenu() {
+  const { param, setParam } = useContext(TourContext);
   const onClick = (e) => {
-    console.log("click ", e);
+    setParam((prev) => {
+      return { data: prev.data, menu: e.key };
+    });
   };
+  
   return (
     <div className={`${style.sideContainer} ${style.fullHeight}`}>
       {/* Menu Icon */}
@@ -91,8 +97,12 @@ export default function SideMenu() {
         {menu.map((item, index) => (
           <div className={style.menuItem} key={index}>
             <div className={style.menuContent}>
-              {item.icon}
-              <span style={{ marginTop: 5 }}>{item.name}</span>
+              <div className={style.icon}>
+                <img src={item.icon}/>
+                </div>
+              <span className={style.menuName} style={{ marginTop: 5 }}>
+                {item.name}
+              </span>
             </div>
           </div>
         ))}
@@ -109,7 +119,8 @@ export default function SideMenu() {
           mode="inline"
           items={items}
           rootClassName={style.filterComponent}
-          
+          color={'#92d72e'}
+          colorBgTextHover={'#1c1f27'}
         />
       </div>
     </div>
